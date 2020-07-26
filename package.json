@@ -1,0 +1,23 @@
+{
+  "name": "servidor-basico-node-express",
+  "version": "1.0.0",
+  "description": "Creando un servidor con node haciendo uso de la librería express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesar-vaesco/Servidor-basico-node-express.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "César Vargas Escorcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesar-vaesco/Servidor-basico-node-express/issues"
+  },
+  "homepage": "https://github.com/cesar-vaesco/Servidor-basico-node-express#readme"
+}
