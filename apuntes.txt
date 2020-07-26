@@ -10,3 +10,19 @@ Carpetas del proyecto:
   controllers: contiene los archivos que actúan como intermediario entre el Modelo y la Vista, gestionando el flujo de información entre ellos y las transformaciones para adaptar los datos a las necesidades de cada uno.
 
   archivo principal de nuestro proyecto: index.js -- se encuentra en la ruta de nuestro proyecto
+
+
+  Middleware que es y su uso:
+
+Un middleware es una función que se puede ejecutar antes o después del manejo de una ruta. Esta función tiene acceso al objeto Request, Response y la función next().
+
+Las funciones middleware suelen ser utilizadas como mecanismo para verificar niveles de acceso antes de entrar en una ruta, manejo de errores, validación de datos, etc.
+
+
+Dependencias instaladas :
+
+      express: es un framework para Node.js que sirve para ayudarnos a crear aplicaciones web en menos tiempo ya que nos proporciona funcionalidades como el  enrutamiento, opciones para gestionar sesiones y cookies, y un largo etc…
+
+      body-parser: permite a express acceder a datos y analizarlo en un objeto json
+
+      ejs:es un lenguaje de plantillas simple que le permite generar marcado HTML con JavaScript simple
