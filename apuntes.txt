@@ -1,0 +1,12 @@
+
+Carpetas del proyecto:
+
+  routes: llevara todas las url de nuestro servidores
+
+  views: contendra los archivos que permitiran mostrar las vistas del proyecto
+
+  public: contendra el codigo del frontent -> css, imagenes, videos, etc
+
+  controllers: contiene los archivos que actúan como intermediario entre el Modelo y la Vista, gestionando el flujo de información entre ellos y las transformaciones para adaptar los datos a las necesidades de cada uno.
+
+  archivo principal de nuestro proyecto: index.js -- se encuentra en la ruta de nuestro proyecto
