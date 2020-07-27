@@ -1,14 +1,14 @@
 <%- include('partials/head.ejs') -%>
 
     <%- include('partials/nav.ejs') -%>
-        <h1>
+        <h1 class="m-3 font-weight-bold">
             <%- title -%>
         </h1>
 
 
-        <ul>
+        <ul class="list-group ml-4">
             <% for(let i=0; i < productos.length; i++) { %>
-                <l1>
+                <l1 class="list-group-item-action active text-dark font-weight-bold">
                     <%= productos[i].id %>:
                         <%= productos[i].nombre %>
                 </l1>
@@ -16,11 +16,14 @@
                 <% } %>
         </ul>
 
-        <h3>Agrega nuevos productos</h3>
-        <form action="/nuevo-producto" method="post">
-            <input type="text" name="nuevoProducto" id="nuevoProducto">
-            <button> Agregando un nuevo producto</button>
+        <h3 class="m-3">Agrega nuevos productos</h3>
+        <form class="form-group" action="/nuevo-producto" method="post">
+            <div class="form-group row">
+                <input type="text" class="form-control col-sm-3 ml-3 mr-2" name="nuevoProducto" placeholder="Nuevo producto" id="nuevoProducto">
+                <button class="btn btn-primary"> Agregando un nuevo producto</button>
+            </div>
         </form>
+
 
         <script>
             const txtNuevoProducto = document.getElementById('nuevoProducto');
