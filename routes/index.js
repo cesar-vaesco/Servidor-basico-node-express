@@ -6,10 +6,17 @@ const router = express.Router();
 //     res.end('Hello word');
 // });
 
-router.get('/', function(req, res) {
+router.get('/', (req, res) => {
     res.render('index', {
         title: 'Mi tienda web'
     });
+});
+
+
+router.get('/productos', (req, res, next) => {
+    res.render('productos', {
+        title: 'Lista de productos'
+    })
 });
 
 
