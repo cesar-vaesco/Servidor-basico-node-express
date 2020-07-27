@@ -5,20 +5,12 @@
             <%- title -%>
         </h1>
 
-        <!-- <table>
-            <% for(let i=0; i < items.length; i++) { %>
-               <tr>
-                 <td><li><%= items[i].id %>:</li></td>
-                 <td><%= items[i].nombre %></td>
-               </tr>
-            <% } %>
-            </table> -->
 
         <ul>
-            <% for(let i=0; i < items.length; i++) { %>
+            <% for(let i=0; i < productos.length; i++) { %>
                 <l1>
-                    <%= items[i].id %>:
-                        <%= items[i].nombre %>
+                    <%= productos[i].id %>:
+                        <%= productos[i].nombre %>
                 </l1>
                 <br>
                 <% } %>
