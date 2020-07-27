@@ -3,6 +3,9 @@ const path = require('path');
 const app = express();
 const colors = require('colors');
 
+
+const routes = require('./routes');
+
 /**Setting - configuraciónes*/
 
 app.set('port', process.env.PORT || 3000);
@@ -19,10 +22,11 @@ app.use((req, res, next) => {
 });
 
 
-//routes
+/** routes */
+app.use(routes);
 
-//static files
-
+/** static files */
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Inicia el servidor
