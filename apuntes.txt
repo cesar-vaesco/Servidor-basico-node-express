@@ -26,3 +26,24 @@ Dependencias instaladas :
       body-parser: permite a express acceder a datos y analizarlo en un objeto json
 
       ejs:es un lenguaje de plantillas simple que le permite generar marcado HTML con JavaScript simple
+
+
+Para no estar reiniciando el servidor cada que se realizan cambios se instala el paquete nodemon
+
+              npm i nodemon -D   (-D instala el paquete como dependencia de desarrollo)
+
+              Para ejecutarlo se utiliza el comando npm run dev
+              (run para poder ejecutar un comando con una palabra que no reconoce node - npm)
+
+
+***process.env.PORT***
+
+En muchos entornos (por ejemplo, Heroku), y como una convención, puede configurar la variable de entorno PORT para decirle a su servidor web en qué puerto escuchar.
+
+Eso process.env.PORT || 3000 significa: lo que sea que esté en la variable de entorno PORT, o 3000 si no hay nada allí.
+
+Entonces, pasa eso app.listen, o a app.set('port', ...), y eso hace que su servidor pueda aceptar un parámetro del entorno en qué puerto escuchar.
+
+Si pasa 3000 codificado app.listen(), siempre está escuchando en el puerto 3000, que puede ser adecuado para usted o no, según sus requisitos y los requisitos del entorno en el que está ejecutando su servidor.
+
+
