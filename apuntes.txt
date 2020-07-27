@@ -47,3 +47,4 @@ Entonces, pasa eso app.listen, o a app.set('port', ...), y eso hace que su servi
 Si pasa 3000 codificado app.listen(), siempre está escuchando en el puerto 3000, que puede ser adecuado para usted o no, según sus requisitos y los requisitos del entorno en el que está ejecutando su servidor.
 
 
+En las últimas versiones de express el paquete de body-parser ya viene incluido por defecto

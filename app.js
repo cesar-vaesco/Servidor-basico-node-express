@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser');
 const app = express();
 const colors = require('colors');
 
@@ -23,8 +22,8 @@ app.use((req, res, next) => {
 });
 
 //se indica el tipo de respuesta que nos puede entregar el servidor
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 
 /** routes */
