@@ -20,15 +20,15 @@ const items = [{
     },
     {
         id: 4,
-        nombre: 'pr0ducto4'
+        nombre: 'producto4'
     },
     {
         id: 5,
-        nombre: 'pr0ducto5'
+        nombre: 'producto5'
     },
     {
         id: 6,
-        nombre: 'pr0ducto6'
+        nombre: 'producto6'
     },
 
 ]
@@ -48,5 +48,14 @@ router.get('/productos', (req, res, next) => {
     })
 });
 
+router.post('/nuevo-producto', (req, res, next) => {
+    const { nuevoProducto } = req.body;
+    items.push({
+        id: items.length + 1,
+        nombre: nuevoProducto
+    });
+    res.redirect('/productos');
+
+});
 
 module.exports = router;

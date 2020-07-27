@@ -14,16 +14,26 @@
             <% } %>
             </table> -->
 
+        <ul>
+            <% for(let i=0; i < items.length; i++) { %>
+                <l1>
+                    <%= items[i].id %>:
+                        <%= items[i].nombre %>
+                </l1>
+                <br>
+                <% } %>
+        </ul>
+
         <h3>Agrega nuevos productos</h3>
         <form action="/nuevo-producto" method="post">
-            <input type="text" name="nuevoItem" id="nuevoItem">
+            <input type="text" name="nuevoProducto" id="nuevoProducto">
             <button> Agregando un nuevo producto</button>
         </form>
 
         <script>
-            const txtNuevoItem = document.getElementById('nuevoItem');
+            const txtNuevoProducto = document.getElementById('nuevoProducto');
             // cuando se visualice la caja de texto que permite agregar un nuevo producto el cursor se ubica dentro de ella
-            txtNuevoItem.focus();
+            txtNuevoProducto.focus();
         </script>
 
 
