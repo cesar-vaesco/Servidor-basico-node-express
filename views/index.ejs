@@ -1,24 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/head.ejs') -%>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <%- title -%>
-    </title>
-</head>
+    <%- include('partials/nav.ejs') -%>
+        <h1>
+            <%- title -%>
+        </h1>
 
-<body>
-    <h1>
-        <%- title -%>
-    </h1>
 
-    <nav>
-        <ul>
-            <li><a href="/productos">Lista de productos</a></li>
-        </ul>
-    </nav>
-</body>
-
-</html>
+        <%- include('partials/footer.ejs') -%>

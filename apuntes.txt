@@ -48,3 +48,10 @@ Si pasa 3000 codificado app.listen(), siempre está escuchando en el puerto 3000
 
 
 En las últimas versiones de express el paquete de body-parser ya viene incluido por defecto
+
+
+
+Partials (Parciales de EJS)
+
+
+          Los parciales son útiles cuando desea reutilizar el mismo HTML en varias vistas. Piense en los parciales como funciones, hacen que los sitios web grandes sean más fáciles de mantener, ya que no tiene que ir y cambiar un texto en cada página en la que aparece. En cambio, define ese paquete reutilizable de código en un archivo e lo incluye donde sea que necesito.
